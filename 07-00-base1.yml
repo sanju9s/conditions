@@ -26,8 +26,6 @@ Mappings:
   MyEnvironmentMap:
     dev:
       instanceType: t2.micro
-    qa:
-      instanceType: t2.medium
     prod:
       instanceType: t2.small           
 
@@ -45,3 +43,4 @@ Resources:
         - !Ref EnvironmentName
         - instanceType
       KeyName: !Ref MyKeyName
+      
